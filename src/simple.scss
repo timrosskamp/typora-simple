@@ -1,10 +1,9 @@
-h1, h2, h3, h4, h5, h6,
-p, ol, ul, pre {
-    padding: 0;
-    margin: 0.5rem 0;
-    border: 0;
-    font-size: inherit;
-}
+@import 'modularscale-sass/stylesheets/_modularscale.scss';
+
+$modularscale: (
+    base: 14px,
+    ratio: 1.18
+);
 
 html {
 
@@ -16,50 +15,105 @@ body {
 }
 
 #write {
-  max-width: 860px;
-  margin: 0 auto;
-  border-left: 1px solid #eee;
-  border-right: 1px solid #eee;
-  padding: 15mm;
-}
+    max-width: 860px;
+    margin: 0 auto;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    padding: 15mm;
+    color: #444;
 
-#write > *:first-child {
-    margin-top: 0;
-}
+    & > *:first-child {
+        margin-top: 0;
+    }
 
-#write > *:last-child {
-    margin-bottom: 0;
-}
+    & > *:last-child {
+        margin-bottom: 0;
+    }
 
-h1 {
-    font-size: 2.074em;
-}
+    h1, h2, h3, h4, h5, h6,
+    p, ol, ul, blockquote, dl, table {
+        padding: 0;
+        margin: 0.5rem 0;
+        border: 0;
+        font-size: inherit;
+    }
 
-h2 {
-    font-size: 1.728em;
-    margin-top: 1.5rem;
-    margin-bottom: 0.8rem;
-}
+    h1 {
+        font-size: ms(6);
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
 
-h3 {
-    font-size: 1.44em;
-    margin-top: 1.2rem;
-    margin-bottom: 0.8rem;
-}
+    h2 {
+        font-size: ms(4);
+        margin-top: 2rem;
+        margin-bottom: 0.8rem;
+        border-bottom: 1px solid #eee;
+    }
 
-h4 {
-    font-size: 1.2em;
-    margin-top: 1rem;
-}
+    h3 {
+        font-size: ms(3);
+        margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
 
-h5 {
+    h4 {
+        font-size: ms(2);
+        margin-top: 1rem;
+    }
 
-}
+    h5 {
+        font-size: ms(1);
+    }
 
-h6 {
+    h6 {
 
-}
+    }
 
-pre {
+    h1, h2, h3, h4, h5, h6 {
+        tt, code {
+            font-size: inherit;
+        }
+    }
 
+    h1:first-child + h2 {
+        margin-top: inherit;
+    }
+
+    a {
+        color: #4183C4;
+    }
+
+    ol, ul {
+        padding-left: 2em;
+    }
+
+    blockquote {
+        border-left: 4px solid #ddd;
+        padding: 0 1em;
+        color: #777;
+        line-height: 1.5;
+    }
+
+    // inline Code
+    .md-fences,
+    code,
+    tt {
+        border: 1px solid #ddd;
+        background-color: #f8f8f8;
+        border-radius: 3px;
+        padding: 0;
+        font-family: Consolas, "Liberation Mono", Courier, monospace;
+        padding: 2px 4px 0px 4px;
+        font-size: 0.9em;
+    }
+
+    // block Code
+    .md-fences {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        padding: 0.2em 1em;
+        padding-top: 8px;
+        padding-bottom: 6px;
+    }
 }
