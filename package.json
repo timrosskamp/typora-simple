@@ -20,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/timrosskamp/typora-simple/issues"
   },
-  "homepage": "https://github.com/timrosskamp/typora-simple#readme"
+  "homepage": "https://github.com/timrosskamp/typora-simple#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1",
+    "pump": "^3.0.0"
+  }
 }
