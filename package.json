@@ -1,0 +1,24 @@
+{
+  "name": "typora-simple",
+  "version": "1.0.0",
+  "description": "A simple Theme for Typora",
+  "main": "dist/simple.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timrosskamp/typora-simple.git"
+  },
+  "keywords": [
+    "Typora",
+    "Theme",
+    "Simple"
+  ],
+  "author": "Tim Rosskamp",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timrosskamp/typora-simple/issues"
+  },
+  "homepage": "https://github.com/timrosskamp/typora-simple#readme"
+}
