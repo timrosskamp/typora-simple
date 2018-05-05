@@ -5,7 +5,9 @@ const sass = require('gulp-sass');
 gulp.task('build', done => {
     pump([
         gulp.src('src/simple.scss'),
-        sass(),
+        sass({
+            outputStyle: 'expanded'
+        }),
         gulp.dest('dist/')
     ], done);
 });
