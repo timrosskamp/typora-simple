@@ -6,7 +6,10 @@ gulp.task('build', done => {
     pump([
         gulp.src('src/simple.scss'),
         sass({
-            outputStyle: 'expanded'
+            outputStyle: 'expanded',
+            includePaths: [
+				'./node_modules'
+            ]
         }),
         gulp.dest('dist/')
     ], done);
