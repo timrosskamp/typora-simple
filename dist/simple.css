@@ -103,6 +103,15 @@ body {
   line-height: 1.5;
 }
 
+#write img {
+  border: 1px solid #eee;
+}
+
+#write .md-line > .md-image:only-child,
+#write p > .md-image:only-child {
+  text-align: left;
+}
+
 #write .md-fences,
 #write code,
 #write tt {

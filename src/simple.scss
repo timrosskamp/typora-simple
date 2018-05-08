@@ -123,6 +123,15 @@ body {
         line-height: 1.5;
     }
 
+    img {
+        border: 1px solid #eee;
+    }
+
+    .md-line > .md-image:only-child,
+    p > .md-image:only-child {
+        text-align: left;
+    }
+
     // inline Code
     .md-fences,
     code,
