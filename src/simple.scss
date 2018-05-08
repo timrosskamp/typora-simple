@@ -21,6 +21,7 @@ body {
     border-right: 1px solid #eee;
     padding: 15mm;
     color: #444;
+    counter-reset: h2 h3 h4;
 
     & > *:first-child {
         margin-top: 0;
@@ -48,17 +49,44 @@ body {
         font-size: 20px;
         margin-top: 2rem;
         margin-bottom: 1.2rem;
+        border-bottom: 1px solid #ddd;
+
+        &:before {
+            display: inline-block;
+            counter-increment: h2;
+            counter-reset: h3 h4;
+            content: counter(h2);
+            padding-right: 1rem;
+            min-width: 3rem;
+        }
     }
 
     h3 {
         font-size: 16px;
         margin-top: 1.5rem;
         margin-bottom: 0.8rem;
+
+        &:before {
+            display: inline-block;
+            counter-increment: h3;
+            counter-reset: h4;
+            content: counter(h2) "." counter(h3);
+            padding-right: 1rem;
+            min-width: 3rem;
+        }
     }
 
     h4 {
         font-size: 14px;
         margin-top: 1rem;
+
+        &:before {
+            display: inline-block;
+            counter-increment: h4;
+            content: counter(h2) "." counter(h3) "." counter(h4);
+            padding-right: 1rem;
+            min-width: 3rem;
+        }
     }
 
     h5 {
