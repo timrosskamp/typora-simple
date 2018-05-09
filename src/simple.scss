@@ -1,3 +1,4 @@
+@import 'config/vars';
 @import 'modularscale-sass/stylesheets/_modularscale.scss';
 
 $modularscale: (
@@ -34,7 +35,7 @@ body {
     h1, h2, h3, h4, h5, h6,
     p, ol, ul, blockquote, dl, table {
         padding: 0;
-        margin: 0.5rem 0;
+        margin: $paragraph-gap 0;
         border: 0;
         font-size: inherit;
     }
@@ -111,23 +112,6 @@ body {
         color: #4183C4;
     }
 
-    ol, ul {
-        padding-left: 1.2em;
-        margin-bottom: 1rem;
-
-        p {
-            margin: 0;
-        }
-    }
-
-    ul ul,
-    ul ol,
-    ol ol,
-    ol ul {
-        margin-top: 0.25rem;
-        margin-bottom: 0.5rem;
-    }
-
     blockquote {
         border-left: 4px solid #ddd;
         padding: 0 1em;
@@ -144,61 +128,7 @@ body {
         text-align: left;
     }
 
-    // inline Code
-    .md-fences,
-    code,
-    tt {
-        border: 1px solid #ddd;
-        background-color: #f8f8f8;
-        border-radius: 3px;
-        padding: 0;
-        font-family: Consolas, "Liberation Mono", Courier, monospace;
-        padding: 2px 4px 0px 4px;
-        font-size: 0.9em;
-    }
-
-    // block Code
-    .md-fences {
-        margin-bottom: 15px;
-        margin-top: 15px;
-        padding: 0.2em 1em;
-        padding-top: 8px;
-        padding-bottom: 6px;
-    }
-
-
-    table {
-        padding: 0;
-        word-break: initial;
-    }
-    table tr {
-        border-top: 1px solid #ccc;
-        margin: 0;
-        padding: 0;
-    }
-    table tr:nth-child(2n) {
-        background-color: #f8f8f8;
-    }
-    table tr th {
-        font-weight: bold;
-        border: 1px solid #ccc;
-        border-bottom: 0;
-        text-align: left;
-        margin: 0;
-        padding: 6px 13px;
-    }
-    table tr td {
-        border: 1px solid #ccc;
-        text-align: left;
-        margin: 0;
-        padding: 6px 13px;
-    }
-    table tr th:first-child,
-    table tr td:first-child {
-        margin-top: 0;
-    }
-    table tr th:last-child,
-    table tr td:last-child {
-        margin-bottom: 0;
-    }
+    @import 'parts/list';
+    @import 'parts/code';
+    @import 'parts/table';
 }

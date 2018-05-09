@@ -91,6 +91,22 @@ body {
   color: #4183C4;
 }
 
+#write blockquote {
+  border-left: 4px solid #ddd;
+  padding: 0 1em;
+  color: #777;
+  line-height: 1.5;
+}
+
+#write img {
+  border: 1px solid #eee;
+}
+
+#write .md-line > .md-image:only-child,
+#write p > .md-image:only-child {
+  text-align: left;
+}
+
 #write ol, #write ul {
   padding-left: 1.2em;
   margin-bottom: 1rem;
@@ -106,22 +122,6 @@ body {
 #write ol ul {
   margin-top: 0.25rem;
   margin-bottom: 0.5rem;
-}
-
-#write blockquote {
-  border-left: 4px solid #ddd;
-  padding: 0 1em;
-  color: #777;
-  line-height: 1.5;
-}
-
-#write img {
-  border: 1px solid #eee;
-}
-
-#write .md-line > .md-image:only-child,
-#write p > .md-image:only-child {
-  text-align: left;
 }
 
 #write .md-fences,
