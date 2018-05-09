@@ -96,10 +96,15 @@ body {
   margin-bottom: 1rem;
 }
 
+#write ol p, #write ul p {
+  margin: 0;
+}
+
 #write ul ul,
 #write ul ol,
 #write ol ol,
 #write ol ul {
+  margin-top: 0.25rem;
   margin-bottom: 0.5rem;
 }
 
