@@ -5,7 +5,8 @@
   "main": "dist/simple.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "gulp watch"
+    "dev": "gulp watch",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
