@@ -1,9 +1,39 @@
+@include-when-export url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&subset=latin-ext');
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./simple/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: url("./simple/Roboto-Italic.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./simple/Roboto-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  src: url("./simple/Roboto-BoldItalic.ttf");
+}
+
 body {
   line-height: 1.2;
   font-size: 14px;
 }
 
 #write {
+  font-family: "Roboto";
   max-width: 860px;
   margin: 0 auto;
   border-left: 1px solid #eee;
@@ -11,6 +41,12 @@ body {
   padding: 15mm;
   color: #444;
   counter-reset: h2 h3 h4;
+}
+
+@media not print {
+  #write {
+    padding-bottom: 80vh;
+  }
 }
 
 #write > *:first-child {
@@ -42,7 +78,7 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-#write h2:before {
+#write h2:not(.md-focus):before {
   display: inline-block;
   counter-increment: h2;
   counter-reset: h3 h4;
@@ -57,7 +93,7 @@ body {
   margin-bottom: 0.8rem;
 }
 
-#write h3:before {
+#write h3:not(.md-focus):before {
   display: inline-block;
   counter-increment: h3;
   counter-reset: h4;
@@ -71,7 +107,7 @@ body {
   margin-top: 1rem;
 }
 
-#write h4:before {
+#write h4:not(.md-focus):before {
   display: inline-block;
   counter-increment: h4;
   content: counter(h2) "." counter(h3) "." counter(h4);

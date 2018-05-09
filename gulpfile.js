@@ -16,5 +16,5 @@ gulp.task('build', done => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch(['src/simple.scss'], ['build']);
+    gulp.watch(['src/**'], ['build']);
 })
