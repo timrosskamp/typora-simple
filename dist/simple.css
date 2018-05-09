@@ -119,8 +119,12 @@ body {
   font-size: inherit;
 }
 
-#write h1:first-child + h2 {
-  margin-top: inherit;
+#write h1 + h2,
+#write h2 + h3,
+#write h3 + h4,
+#write h4 + h5,
+#write h5 + h6 {
+  margin-top: 0;
 }
 
 #write a {
