@@ -38,6 +38,12 @@ body {
   }
 }
 
+@media print {
+  @page {
+    margin: 10mm;
+  }
+}
+
 #write {
   font-family: "Roboto";
   max-width: 860px;

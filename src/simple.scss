@@ -19,6 +19,12 @@ body {
     }
 }
 
+@media print {
+    @page {
+        margin: 10mm 0; // BUG: default margin for left & right can't be overritten
+    }
+}
+
 #write {
     font-family: "Roboto";
     max-width: 860px;
