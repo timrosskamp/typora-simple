@@ -13,9 +13,10 @@
     "url": "git+https://github.com/timrosskamp/typora-simple.git"
   },
   "keywords": [
-    "Typora",
-    "Theme",
-    "Simple"
+    "simple",
+    "compact",
+    "typora-theme",
+    "markdown-theme"
   ],
   "author": "Tim Rosskamp",
   "license": "MIT",
