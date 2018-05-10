@@ -8,15 +8,15 @@ $modularscale: (
 );
 
 html {
-
-}
-
-body {
     line-height: 1.2;
     font-size: 16px;
     @media print {
         font-size: 10pt;
     }
+}
+
+body {
+
 }
 
 @media print {
@@ -131,6 +131,13 @@ body {
         margin-top: 0;
     }
 
+    hr {
+        box-sizing: content-box;
+        height: 0;
+        margin: ($paragraph-gap * 3) 0;
+        border-top: 1px solid #ddd;
+    }
+
     a {
         color: #4183C4;
     }
@@ -142,16 +149,8 @@ body {
         line-height: 1.5;
     }
 
-    img {
-        border: 1px solid #eee;
-    }
-
-    .md-line > .md-image:only-child,
-    p > .md-image:only-child {
-        text-align: left;
-    }
-
     @import 'parts/list';
     @import 'parts/code';
+    @import 'parts/img';
     @import 'parts/table';
 }

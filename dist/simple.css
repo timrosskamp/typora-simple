@@ -27,20 +27,20 @@
   src: url("./simple/Roboto-BoldItalic.ttf");
 }
 
-body {
+html {
   line-height: 1.2;
   font-size: 16px;
 }
 
 @media print {
-  body {
+  html {
     font-size: 10pt;
   }
 }
 
 @media print {
   @page {
-    margin: 10mm;
+    margin: 10mm 0;
   }
 }
 
@@ -139,6 +139,13 @@ body {
   margin-top: 0;
 }
 
+#write hr {
+  box-sizing: content-box;
+  height: 0;
+  margin: 1.5rem 0;
+  border-top: 1px solid #ddd;
+}
+
 #write a {
   color: #4183C4;
 }
@@ -148,15 +155,6 @@ body {
   padding: 0 1em;
   color: #777;
   line-height: 1.5;
-}
-
-#write img {
-  border: 1px solid #eee;
-}
-
-#write .md-line > .md-image:only-child,
-#write p > .md-image:only-child {
-  text-align: left;
 }
 
 #write ol, #write ul {
@@ -194,6 +192,15 @@ body {
   padding: 0.2em 1em;
   padding-top: 8px;
   padding-bottom: 6px;
+}
+
+#write img {
+  border: 1px solid #eee;
+}
+
+#write .md-line > .md-image:only-child,
+#write p > .md-image:only-child {
+  text-align: left;
 }
 
 #write table {
