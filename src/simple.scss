@@ -72,8 +72,8 @@ body {
         &:not(.md-focus):before {
             display: inline-block;
             content: counter(h2);
-            padding-right: 1rem;
-            min-width: 3rem;
+            padding-right: $counter-gapRight;
+            min-width: $counter-width;
         }
     }
 
@@ -87,8 +87,8 @@ body {
         &:not(.md-focus):before {
             display: inline-block;
             content: counter(h2) "." counter(h3);
-            padding-right: 1rem;
-            min-width: 3rem;
+            padding-right: $counter-gapRight;
+            min-width: $counter-width;
         }
     }
 
@@ -100,8 +100,8 @@ body {
         &:not(.md-focus):before {
             display: inline-block;
             content: counter(h2) "." counter(h3) "." counter(h4);
-            padding-right: 1rem;
-            min-width: 3rem;
+            padding-right: $counter-gapRight;
+            min-width: $counter-width;
         }
     }
 
@@ -154,4 +154,5 @@ body {
     @import 'parts/code';
     @import 'parts/img';
     @import 'parts/table';
+    @import 'parts/toc';
 }

@@ -1,0 +1,40 @@
+.md-toc {
+    margin: $paragraph-gap 0;
+
+    a {
+        color: inherit;
+    }
+}
+
+.md-toc-item {
+    color: inherit;
+}
+
+.md-toc-h1 {
+    display: none;
+}
+
+.md-toc-h2 {
+    font-weight: bold;
+    * + & {
+        margin-top: $paragraph-gap / 2;
+    }
+
+    .md-toc-inner {
+        margin-left: 0;
+    }
+}
+
+.md-toc-h3 {
+
+    .md-toc-inner {
+        margin-left: 2em;
+    }
+}
+
+.md-toc-h4 {
+
+    .md-toc-inner {
+        margin-left: 4em;
+    }
+}

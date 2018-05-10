@@ -100,8 +100,8 @@ html {
 #write h2:not(.md-focus):before {
   display: inline-block;
   content: counter(h2);
-  padding-right: 1rem;
-  min-width: 3rem;
+  padding-right: 0.5rem;
+  min-width: 3.5rem;
 }
 
 #write h3 {
@@ -115,8 +115,8 @@ html {
 #write h3:not(.md-focus):before {
   display: inline-block;
   content: counter(h2) "." counter(h3);
-  padding-right: 1rem;
-  min-width: 3rem;
+  padding-right: 0.5rem;
+  min-width: 3.5rem;
 }
 
 #write h4 {
@@ -128,8 +128,8 @@ html {
 #write h4:not(.md-focus):before {
   display: inline-block;
   content: counter(h2) "." counter(h3) "." counter(h4);
-  padding-right: 1rem;
-  min-width: 3rem;
+  padding-right: 0.5rem;
+  min-width: 3.5rem;
 }
 
 #write h1 tt, #write h1 code, #write h2 tt, #write h2 code, #write h3 tt, #write h3 code, #write h4 tt, #write h4 code, #write h5 tt, #write h5 code, #write h6 tt, #write h6 code {
@@ -257,4 +257,40 @@ html {
 #write table tr th:last-child,
 #write table tr td:last-child {
   margin-bottom: 0;
+}
+
+#write .md-toc {
+  margin: 0.5rem 0;
+}
+
+#write .md-toc a {
+  color: inherit;
+}
+
+#write .md-toc-item {
+  color: inherit;
+}
+
+#write .md-toc-h1 {
+  display: none;
+}
+
+#write .md-toc-h2 {
+  font-weight: bold;
+}
+
+* + #write .md-toc-h2 {
+  margin-top: 0.25rem;
+}
+
+#write .md-toc-h2 .md-toc-inner {
+  margin-left: 0;
+}
+
+#write .md-toc-h3 .md-toc-inner {
+  margin-left: 2em;
+}
+
+#write .md-toc-h4 .md-toc-inner {
+  margin-left: 4em;
 }
