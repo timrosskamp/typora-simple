@@ -1,0 +1,16 @@
+/**
+ * YAML front matter is an optional section of valid YAML that is placed at the
+ * top of a page and is used for maintaining metadata for the page and its
+ * contents.
+ */
+
+pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}

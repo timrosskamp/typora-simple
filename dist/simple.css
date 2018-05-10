@@ -50,6 +50,11 @@ html {
   margin: 0 auto;
   color: #444;
   counter-reset: h2 h3 h4;
+  /**
+ * YAML front matter is an optional section of valid YAML that is placed at the
+ * top of a page and is used for maintaining metadata for the page and its
+ * contents.
+ */
 }
 
 @media not print {
@@ -155,6 +160,17 @@ html {
   padding: 0 1em;
   color: #777;
   line-height: 1.5;
+}
+
+#write pre.md-meta-block {
+  padding: 1rem;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border: 0;
+  border-radius: 3px;
+  color: #777777;
+  margin-top: 0 !important;
 }
 
 #write ol, #write ul {
