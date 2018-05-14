@@ -294,3 +294,7 @@ html {
 #write .md-toc-h4 .md-toc-inner {
   margin-left: 4em;
 }
+
+#write [mdtype="math_block"] {
+  border: 1px dashed #eee;
+}
